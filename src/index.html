@@ -6,8 +6,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <form class="form">
+        <label> Digite o texto que deseja codificar ou descodificar</label>
+        <input type="text" id="answer" placeholder="Digite aqui seu texto">
+        <label> Digite o padrão de deslocamento</label>
+        <input type="number" id="offset"> 
+        <input type="button" onclick="button()">
+      </form>  
+    </div>
     <script src="cipher.js"></script>
-    <script src="tests"></script>
-  </body>
+    </body>
 </html>
