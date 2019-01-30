@@ -1,25 +1,44 @@
 * {
-    font-family: open sans, sans-serif;
-    box-sizing: border-box;
-  }
+  font-family: 'Roboto Slab', serif;
+  font-size: 28px;
+}
 
-div {
-    text-align: center;
-  }
+body {
+  background-image: url(lime-2481346_1920.jpg);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
 
-p {
-    text-align: center;
+.center {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #FBA100;
 }
 
 .buttons {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: yellow;
+    font-family: 'Secular One', sans-serif;
+    background-color: #FBA100;
     border: 0;
-    color: black;
+    color: white;
     text-align: center;
-    margin: 5px;
+    margin: 10px;
     padding: 15px 32px;
-    font-size: 16px;
-    border-radius: 10%;
+    font-size: 20px;
+    border-radius: 20%;
   }
+
+
+
+
+
+
+
+
+
 

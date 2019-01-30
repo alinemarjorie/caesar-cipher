@@ -7,29 +7,27 @@
   </head>
   <body>
     <div id="root">
-      <div id="inicio">
+    <h1 class=center>Let's Cook/Cipher!</h1>
+      <div id="inicio" class="center">
       <form class="form">
-        <div>
-        <label> Digite o texto que deseja codificar ou descodificar</label>
-        </div>
-        <div>
-        <input type="text" id="answer" placeholder="Digite aqui seu texto">
-        </div>
-        <div>
-        <label> Digite o padrão de deslocamento</label>
-        </div>
-        <div>
-        <input type="number" id="offset" placeholder="Digite o nº de deslocamento"> 
-        </div>
+        <label class="campo"> Texto que deseja codificar ou decodificar:</label><br>
+        <input type="text" id="answer" placeholder="Digite aqui seu texto"><br><br>
+        <label> Padrão de deslocamento:</label><br>
+        <input type="number" id="offset" placeholder="Digite aqui o número"><br><br>
         <input type="button" class="buttons" value="Codificar" onclick="buttonC()">
-        <input type="button" class="buttons" value="Descodificar" onclick="buttonD()">
+        <input type="button" class="buttons" value="Decodificar" onclick="buttonD()">
       </form>
-      <div id="final"> 
+      </div>
+
+      <div id="final" class="center"> 
       <p id=resultCode></p>
       </div>
-      </div>
     </div>
+
     <script src="cipher.js"></script>
     <script src="tests.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     </body>
 </html>
