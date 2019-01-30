@@ -7,14 +7,29 @@
   </head>
   <body>
     <div id="root">
+      <div id="inicio">
       <form class="form">
+        <div>
         <label> Digite o texto que deseja codificar ou descodificar</label>
+        </div>
+        <div>
         <input type="text" id="answer" placeholder="Digite aqui seu texto">
+        </div>
+        <div>
         <label> Digite o padrão de deslocamento</label>
-        <input type="number" id="offset"> 
-        <input type="button" onclick="button()">
-      </form>  
+        </div>
+        <div>
+        <input type="number" id="offset" placeholder="Digite o nº de deslocamento"> 
+        </div>
+        <input type="button" class="buttons" value="Codificar" onclick="buttonC()">
+        <input type="button" class="buttons" value="Descodificar" onclick="buttonD()">
+      </form>
+      <div id="final"> 
+      <p id=resultCode></p>
+      </div>
+      </div>
     </div>
     <script src="cipher.js"></script>
+    <script src="tests.js"></script>
     </body>
 </html>
