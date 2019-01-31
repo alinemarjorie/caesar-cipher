@@ -21,6 +21,8 @@ function encode(answer,offset){
       cipherMessage.push(String.fromCharCode(space));
     }
   }
+document.getElementById('final').style.display = 'block';
+document.getElementById('inicio').style.display = 'none';
 document.getElementById("resultCode").innerHTML = cipherMessage.join("");
 }
 
@@ -47,5 +49,8 @@ function decode(answer,offset){
       cipherMessage.push(String.fromCharCode(space));
     }
   }
+
+document.getElementById('final').style.display = 'block';
+document.getElementById('inicio').style.display = 'none';
 document.getElementById("resultCode").innerHTML = cipherMessage.join("");
 }

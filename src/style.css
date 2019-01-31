@@ -6,7 +6,6 @@
 body {
   background-image: url(lime-2481346_1920.jpg);
   background-attachment: scroll;
-  background-repeat: no-repeat;
 }
 
 .center {
@@ -23,7 +22,7 @@ h1 {
 
 .buttons {
     font-family: 'Secular One', sans-serif;
-    background-color: #FBA100;
+    background-color: rgb(223, 142, 2);
     border: 0;
     color: white;
     text-align: center;
@@ -31,7 +30,20 @@ h1 {
     padding: 15px 32px;
     font-size: 20px;
     border-radius: 20%;
-  }
+}
+
+.inicio {
+  display: block;
+}
+
+.final {
+  display: none;
+}
+
+input, textarea {
+  background:#f0eeb1;
+}
+
 
 
 
