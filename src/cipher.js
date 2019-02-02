@@ -1,7 +1,18 @@
-function buttonC() {
+document.getElementById("encode").addEventListener("click", buttonEncode);
+
+document.getElementById("decode").addEventListener("click", buttonDecode);
+
+
+function buttonEncode(event) {
+  event.preventDefault();
+
   let answer = document.getElementById("answer").value;
-  let  offset = document.getElementById("offset").value;
-  encode(answer, parseInt(offset));
+  let  offset = parseInt(document.getElementById("offset").value);
+  if(offset < 0 ){
+    decode(answer, offset * -1);
+    return;
+  }
+  encode(answer, offset);
 }
 
 function encode(answer,offset){
@@ -21,13 +32,19 @@ function encode(answer,offset){
 document.getElementById("resultCode").innerHTML = cipherMessage.join("");
 }
 
-function buttonD() {
-  let answer = document.getElementById("answer").value;
-  let  offset = document.getElementById("offset").value;
-  decode(answer, parseInt(offset));
- }
+function buttonDecode(event) {
+  event.preventDefault();
 
-function decode(answer,offset) {
+  let answer = document.getElementById("answer").value;
+  let  offset = parseInt(document.getElementById("offset").value);
+  if(offset < 0 ){
+    encode(answer, offset * -1);
+    return;
+  }
+  decode(answer, offset);
+}
+
+function decode(answer,offset) {  
   let cipherMessage = [];
   for (let i = 0; i < answer.length; i++) {
     let asciiCode = answer[i].charCodeAt();

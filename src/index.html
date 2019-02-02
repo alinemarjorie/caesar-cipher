@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   </head>
   <body>
     <div id="root">
@@ -11,11 +14,11 @@
       <div id="inicio" class="center">
       <form class="form">
         <label class="campo"> Texto que deseja codificar ou decodificar:</label><br>
-        <textarea cols="40" rows="6" id="answer" placeholder="Digite aqui seu texto"></textarea><br>
+        <textarea cols="40" rows="6" id="answer" placeholder="Digite aqui seu texto" required ></textarea><br>
         <label> Padrão de deslocamento:</label><br>
-        <input type="number" id="offset" placeholder="Digite aqui o número"><br>
-        <input type="button" class="buttons" value="Codificar" onclick="buttonC()">
-        <input type="button" class="buttons" value="Decodificar" onclick="buttonD()">
+        <input type="number" id="offset" placeholder="Digite aqui o número" required ><br>
+        <input type="submit" id="encode" class="buttons" value="Codificar">
+        <input type="submit" id="decode" class="buttons" value="Decodificar">
       </form>
       </div>
 
@@ -27,8 +30,5 @@
 
     <script src="cipher.js"></script>
     <script src="tests.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     </body>
 </html>
