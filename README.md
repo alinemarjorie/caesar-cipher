@@ -27,7 +27,7 @@ facilitar o processo para usuários de gerações diferentes, pois o programa se
 
 ## Diagrama de blocos
 
-![Screenshot](cipher.jpg)
+![Diagrama](src/cipher.jpg)
 
 
 
